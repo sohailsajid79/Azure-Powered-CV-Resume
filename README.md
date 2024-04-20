@@ -1,5 +1,5 @@
 # azure-resume
-Building Resume on Azure with Blob Storage, Functions, CosmosDB, and GitHub Actions
+Building Resume on Azure with Blob Storage, Functions, CosmosDB, and GitHub Actions.
 
 # notes
  - main.js contains code for visitor counter.
