@@ -2,19 +2,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 });
 
-// webpack.config.js
-const Dotenv = require('dotenv-webpack');
+//const functionProdURL = process.env.functionProdURL;
 
-module.exports = {
-  // Your Webpack configuration...
-  plugins: [
-    new Dotenv()
-  ]
-};
-
-const functionProdURL = process.env.functionProdURL;
-
-const functionDevURL = process.env.functionDevURL;
+//const functionDevURL = process.env.functionDevURL;
 
 const getVisitCount = async () => {
     let count = 0;
