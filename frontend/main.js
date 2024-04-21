@@ -2,14 +2,24 @@ window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 });
 
-const functionProdURL = ""
+// webpack.config.js
+const Dotenv = require('dotenv-webpack');
 
-const functionDevURL = 'http://localhost:7071/api/GetAndUpdateCounter';
+module.exports = {
+  // Your Webpack configuration...
+  plugins: [
+    new Dotenv()
+  ]
+};
+
+const functionProdURL = process.env.functionProdURL;
+
+const functionDevURL = process.env.functionDevURL;
 
 const getVisitCount = async () => {
     let count = 0;
     try {
-        const response = await fetch(functionDevURL);
+        const response = await fetch(functionProdURL);
         const res = await response.json();
         // console.log('calling function API');
         count = res.count;
