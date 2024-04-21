@@ -2,9 +2,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 });
 
-//const functionProdURL = process.env.functionProdURL;
+const functionProdURL = process.env.functionProdURL;
 
-//const functionDevURL = process.env.functionDevURL;
+const functionDevURL = process.env.functionDevURL;
 
 const getVisitCount = async () => {
     let count = 0;
