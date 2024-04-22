@@ -9,9 +9,9 @@ const functionDevURL = process.env.functionDevURL;
 const getVisitCount = async () => {
     let count = 0;
     try {
-        const response = await fetch(functionProdURL);
+        const response = await fetch(functionApi);
         const res = await response.json();
-        // console.log('calling function API');
+        console.log('calling function API');
         count = res.count;
         document.getElementById('counter').innerText = count;
     } catch (error) {
