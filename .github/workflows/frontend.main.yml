@@ -21,8 +21,9 @@ jobs:
         uses: Azure/login@v2.1.0
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_CREDENTIALS }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          clientSecret-id: ${{ secrets.AZURE_CLIENT_SECRET }}
 
       - name: Run Azure CLI commands
         run: |
