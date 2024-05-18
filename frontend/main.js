@@ -1,15 +1,19 @@
+require('dotenv').config();
+
 window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 });
 
-const functionProdURL = process.env.functionProdURL;
+const functionProdURL = process.env.functionProdURL
 
-const functionDevURL = process.env.functionDevURL;
+// Local development
+// const functionDevURL = "http://localhost:7071/api/GetAndUpdateCounter"
 
 const getVisitCount = async () => {
     let count = 0;
     try {
-        const response = await fetch(functionApi);
+        const response = await fetch(functionProdURL);
+        // const response = await fetch(functionDevURL);
         const res = await response.json();
         console.log('calling function API');
         count = res.count;
