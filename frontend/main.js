@@ -1,10 +1,10 @@
-require('dotenv').config();
+// require('dotenv').config();
 
 window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 });
 
-const functionProdURL = process.env.functionProdURL
+const functionProdURL = "https://resfunctioncapp.azurewebsites.net/api/GetAndUpdateCounter?code=zWLHk_RNGReN8o7I4GcP-ClGjtJw4yNTzHSm6j8MROnNAzFujKYKug%3D%3D"
 
 // Local development
 // const functionDevURL = "http://localhost:7071/api/GetAndUpdateCounter"
