@@ -34,7 +34,7 @@ jobs:
         with:
           azcliversion: latest
           inlineScript: |
-            az storage blob upload-batch --account-name azresumestorageacc --destination-container '$web' --source frontend/ --overwrite
+            az storage blob upload-batch --account-name azresumestorageacc --destination '$web' --source frontend/ --overwrite
 
       - name: Purge CDN endpoint
         uses: azure/CLI@v2
