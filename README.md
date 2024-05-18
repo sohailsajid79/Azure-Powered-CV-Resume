@@ -47,7 +47,7 @@ This project leverages various Azure services to create a dynamic, scalable, and
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/yourusername/azure-resume.git
+   git clone https://github.com/sohailsajid79/azure-resume.git
    cd azure-resume
 
 2. **Setup Azure Blob Storage**
