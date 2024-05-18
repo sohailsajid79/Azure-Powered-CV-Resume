@@ -14,8 +14,11 @@ const getVisitCount = async () => {
     try {
         const response = await fetch(functionProdURL);
         // const response = await fetch(functionDevURL);
+        if (!response.ok) {
+            throw new Error('`HTTP error! Status: ${response.status}`');
+        }
         const res = await response.json();
-        console.log('calling function API');
+        // console.log('calling function API', res);
         count = res.count;
         document.getElementById('counter').innerText = count;
     } catch (error) {
