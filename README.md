@@ -1,4 +1,4 @@
-# Status
+# Workflow Status
 [![Frontend Deployment](https://github.com/sohailsajid79/azure-resume/actions/workflows/frontend.main.yml/badge.svg)](https://github.com/sohailsajid79/azure-resume/actions/workflows/frontend.main.yml)
 [![.github/workflows/backend.main.yml](https://github.com/sohailsajid79/azure-resume/actions/workflows/backend.main.yml/badge.svg)](https://github.com/sohailsajid79/azure-resume/actions/workflows/backend.main.yml)
 
