@@ -1,3 +1,7 @@
+# Workflow Status
+[![Frontend Deployment](https://github.com/sohailsajid79/azure-resume/actions/workflows/frontend.main.yml/badge.svg)](https://github.com/sohailsajid79/azure-resume/actions/workflows/frontend.main.yml)
+[![.github/workflows/backend.main.yml](https://github.com/sohailsajid79/azure-resume/actions/workflows/backend.main.yml/badge.svg)](https://github.com/sohailsajid79/azure-resume/actions/workflows/backend.main.yml)
+
 # Azure Resume
 
 This project demonstrates how to build and host a resume on Azure using Blob Storage, Functions, CosmosDB, and GitHub Actions for CI/CD.
