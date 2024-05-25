@@ -7,7 +7,7 @@ on:
         - 'backend/**'
 
 env:
-  AZURE_FUNCTIONAPP_NAME: 'GetAndUpdateCounter'
+  AZURE_FUNCTIONAPP_NAME: 'resfunctioncapp'
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'backend'
   DOTNET_VERSION: '3.1'
 
